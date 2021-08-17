@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eduVPN (vpn.tuxed.net)</title>
+    <link href="screen.css" media="screen" rel="stylesheet">
+    <link href="eduVPN-screen.css" media="screen" rel="stylesheet">
+    <script src="search.js"></script>
+</head>
+<body>
+    <header>
+        <form method="post" action="setLanguage">
+            <button type="submit" name="uiLanguage" value="en-US">English</button>
+            <button type="submit" name="uiLanguage" value="nl-NL">Nederlands</button>
+        </form>
+    </header>
+    <main>
+        <p>
+Select your organization to continue the login process.</p>
+    <form method="post">
+        <ul>
+            <li>
+                <button autofocus="autofocus" name="IdP" type="submit" value="https://idp.tuxed.net/metadata">FrKoIdP</button>
+            </li>
+        </ul>
+    </form>
+    <details>
+        <summary>Other...</summary>
+            <form id="searchBox">
+                <input type="text" name="searchFor" placeholder="Search for your organization...">
+            </form>
+            <form id="organizationList" method="post">
+                <ul>
+                    <li>
+                        <button name="IdP" type="submit" value="https://idp-test.feide.no">Feide - Norwegian educational institutions (test-IdP)</button>
+                    </li>
+                    <li>
+                        <button name="IdP" type="submit" value="http://localhost:8080/metadata">FrkoIdP (dev)</button>
+                    </li>
+                    <li>
+                        <button name="IdP" type="submit" value="https://idp.fyrkat.no">fyrkat</button>
+                    </li>
+                    <li>
+                        <button name="IdP" type="submit" value="https://testidp.funet.fi/idp/shibboleth">Haka Test-Idp</button>
+                    </li>
+                    <li>
+                        <button name="IdP" type="submit" value="https://samltest.id/saml/idp">SAMLtest IdP</button>
+                    </li>
+                    <li>
+                        <button name="IdP" type="submit" value="https://engine.test.surfconext.nl/authentication/idp/metadata">SURFconext TEST</button>
+                    </li>
+                    <li>
+                        <button name="IdP" type="submit" value="https://wayf.wayf.dk">WAYF - Where Are You From</button>
+                    </li>
+                </ul>
+            </form>
+            <span id="noResults">No Results!</span>
+    </details>
+    </main>
+    <footer>
+        Powered by <a target="_blank" href="https://www.eduvpn.org/">eduVPN</a>
+    </footer>
+</body>
+</html>
