@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // if we already have a favorite IdP, we need to focus on the input search
     // box that becomes visible when the user toggles <details>
-    if (null !== document.querySelector("details")) {
+    /*if (null !== document.querySelector("details")) {
         var details = document.querySelector("details");
         details.addEventListener("toggle", function(e) {
             if (this.open) {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 searchBoxInput.focus();
             }
         });
-    }
+    }*/
 
     if (null !== document.querySelector("form#searchBox")) {
         var searchBox = document.querySelector("form#searchBox");
