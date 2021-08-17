@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
         });
         var searchBoxInput = document.querySelector("form#searchBox input");
-        // searchBoxInput.focus();
+        searchBoxInput.focus();
         searchBoxInput.addEventListener("keyup", function() {
             var searchFor = this.value.toUpperCase();
             var organizationList = document.querySelectorAll("form#organizationList button");
