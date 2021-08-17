@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // if we already have a favorite IdP, we need to focus on the input search
     // box that becomes visible when the user toggles <details>
-    /*if (null !== document.querySelector("details")) {
+    if (null !== document.querySelector("details")) {
         var details = document.querySelector("details");
         details.addEventListener("toggle", function(e) {
             if (this.open) {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 searchBoxInput.focus();
             }
         });
-    }*/
+    }
 
     if (null !== document.querySelector("form#searchBox")) {
         var searchBox = document.querySelector("form#searchBox");
@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
         var searchBoxInput = document.querySelector("form#searchBox input");
         searchBoxInput.focus();
         searchBoxInput.addEventListener("keyup", function() {
-            var searchFor = this.value.toUpperCase();
+            /*var searchFor = this.value.toUpperCase();
             var organizationList = document.querySelectorAll("form#organizationList button");
             var visibleOrganizationCount = 0;
             organizationList.forEach(function(e) {
                 var searchIn = e.innerHTML + " " + e.value;
                 if (searchIn.toUpperCase().indexOf(searchFor) !== -1) {
-                    // e.parentElement.style.display = "block";
+                    e.parentElement.style.display = "block";
                     visibleOrganizationCount++;
                 } else {
-                    // e.parentElement.style.display = "none";
+                    e.parentElement.style.display = "none";
                 }
             });
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector("span#noResults").style.display = "block";
             } else {
                 document.querySelector("span#noResults").style.display = "none";
-            }
+            }*/
         });
     }
 });
