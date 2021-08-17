@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
         var searchBox = document.querySelector("form#searchBox");
         // unhide the search box
         searchBox.style.display = "block";
-        /*
         searchBox.addEventListener("submit", function(e) {
             // disable default form submit
             e.preventDefault();
         });
+        /*
         var searchBoxInput = document.querySelector("form#searchBox input");
         searchBoxInput.focus();
         searchBoxInput.addEventListener("keyup", function() {
