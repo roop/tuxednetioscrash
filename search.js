@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (null !== document.querySelector("form#searchBox")) {
         var searchBox = document.querySelector("form#searchBox");
-        /*
         // unhide the search box
         searchBox.style.display = "block";
+        /*
         searchBox.addEventListener("submit", function(e) {
             // disable default form submit
             e.preventDefault();
