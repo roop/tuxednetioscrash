@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    if (null !== document.querySelector("form#searchBox")) {
+    /*if (null !== document.querySelector("form#searchBox")) {
         var searchBox = document.querySelector("form#searchBox");
         // unhide the search box
         searchBox.style.display = "block";
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var searchBoxInput = document.querySelector("form#searchBox input");
         searchBoxInput.focus();
         searchBoxInput.addEventListener("keyup", function() {
-            /*var searchFor = this.value.toUpperCase();
+            var searchFor = this.value.toUpperCase();
             var organizationList = document.querySelectorAll("form#organizationList button");
             var visibleOrganizationCount = 0;
             organizationList.forEach(function(e) {
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector("span#noResults").style.display = "block";
             } else {
                 document.querySelector("span#noResults").style.display = "none";
-            }*/
+            }
         });
-    }
+    }*/
 });
 
