@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // disable default form submit
             e.preventDefault();
         });
-        /*var searchBoxInput = document.querySelector("form#searchBox input");
+        var searchBoxInput = document.querySelector("form#searchBox input");
         searchBoxInput.focus();
         searchBoxInput.addEventListener("keyup", function() {
             var searchFor = this.value.toUpperCase();
@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
             organizationList.forEach(function(e) {
                 var searchIn = e.innerHTML + " " + e.value;
                 if (searchIn.toUpperCase().indexOf(searchFor) !== -1) {
-                    e.parentElement.style.display = "block";
+                    // e.parentElement.style.display = "block";
                     visibleOrganizationCount++;
                 } else {
-                    e.parentElement.style.display = "none";
+                    // e.parentElement.style.display = "none";
                 }
             });
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 document.querySelector("span#noResults").style.display = "none";
             }
-        });*/
+        });
     }
 });
 
